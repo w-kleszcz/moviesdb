@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My movie database</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My favorite movies to watch
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="container">
+                        <h3>Titles</h3>
+                        <ul id="movieList">
+                            <li><input type="checkbox"> aaa</li>
+                            <li><input type="checkbox"> bbb</li>
+                            <li><input type="checkbox"> ccc</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <button onclick="deleteMovie()" i class="fa-solid fa-trash"> Delete selected</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <h3>Add movie</h3>
+                        Title: <input id="inputTitle" type="text"><br>
+                        Year: <input id="inputYear" type="text"><br>
+                        Actors: <input id="inputActors" type="text"><br>
+                        <button onclick="addMovie()" i class="fa-solid fa-square-plus"> Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <hr>
+            &copy; My movie database. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
